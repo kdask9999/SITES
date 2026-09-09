@@ -1,0 +1,12 @@
+Options -Indexes
+DirectoryIndex index.html
+RewriteEngine On
+RewriteRule ^api/(search|usage|enrich|validate-whatsapp|samples)/?$ api.php?action=$1 [QSA,L]
+RewriteRule ^amostra/([a-zA-Z0-9-]+)/?$ api.php?action=sample-page&slug=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+<FilesMatch "^(config\.local\.php|crm\.sqlite)$">
+  Require all denied
+</FilesMatch>
