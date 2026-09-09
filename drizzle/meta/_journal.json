@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785696910088,
+      "tag": "0000_omniscient_doctor_spectrum",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785701907661,
+      "tag": "0001_boring_rafael_vega",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788914605206,
+      "tag": "0002_plain_payback",
+      "breakpoints": true
+    }
+  ]
+}
